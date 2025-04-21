@@ -1,0 +1,23 @@
+# 本项目下的dataset中的数据集仅供大家参考存放格式和调试代码是否能跑通
+# dataset path
+path: E:\My_Research\ultralytics-yolo11-20241018\RTDETR-main
+train: ./dataset/visdrone/VisDrone2019-DET-train    # path + train  6471 images
+val: ./dataset/visdrone/VisDrone2019-DET-val        # path + val    548  images
+# test: ./dataset/visdrone/VisDrone2019-DET-test-dev  # path + test   1610 images
+test: ./dataset/visdrone/complex-test  # 自定义的复杂子集，在使用这个子集作为测试集时，需要把上面的原有的test注释掉
+
+# number of classes
+nc: 10
+
+# class names
+names:
+  0: pedestrian
+  1: people
+  2: bicycle
+  3: car
+  4: van
+  5: truck
+  6: tricycle
+  7: awning-tricycle
+  8: bus
+  9: motor
